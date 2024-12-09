@@ -1,14 +1,26 @@
-# EKS Terraform Setup
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud and DevOps Project - EKS Terraform Setup</title>
+</head>
+<body>
+    <h1>EKS Terraform Setup</h1>
+    <p>This folder contains Terraform configuration files for creating an EKS cluster.</p>
 
-This folder contains Terraform configuration files for creating an EKS cluster.
+    <h2>Files</h2>
+    <ul>
+        <li><a href="https://github.com/bopaiah18/CloudAndDevops/blob/main/MarioGame/EKS-TF/main.tf" target="_blank">main.tf</a>: Main Terraform configuration.</li>
+        <li><a href="https://github.com/bopaiah18/CloudAndDevops/blob/main/MarioGame/EKS-TF/backend.tf" target="_blank">backend.tf</a>: To input the state file storage path.</li>
+        <li><a href="https://github.com/bopaiah18/CloudAndDevops/blob/main/MarioGame/EKS-TF/provider.tf" target="_blank">outputs.tf</a>: To specify the cloud provider.</li>
+    </ul>
 
-## Files
-- `main.tf`: Main Terraform configuration.
-- `variables.tf`: Input variables for the module.
-- `outputs.tf`: Outputs from the module.
-
-## Usage
-```bash
-terraform init
-terraform plan
-terraform apply
+    <h2>Usage</h2>
+    <pre>
+        terraform init
+        terraform plan
+        terraform apply
+    </pre>
+</body>
+</html>
