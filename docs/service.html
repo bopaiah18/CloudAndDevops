@@ -1,24 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud and DevOps Project -Kubernets Deployment</title>
+</head>
+<body>
+    <h1>EKS Terraform Setup</h1>
+    <p>This folder contains deployment and service file needed to deploy the porject on EKS.</p>
 
-**`docs/service.md`**
-```markdown
-# Service YAML
+    <h2>Files</h2>
+    <ul>
+        <li><a href="https://github.com/bopaiah18/CloudAndDevops/blob/main/MarioGame/deployment.yaml" target="_blank">main.tf</a>: Main Terraform configuration.</li>
+  
+        <li><a href="https://github.com/bopaiah18/CloudAndDevops/blob/main/MarioGame/service.yaml" target="_blank">outputs.tf</a>: To specify the cloud provider.</li>
+    </ul>
 
-The service YAML file defines the Kubernetes service configuration for exposing the MarioGame application.
-
-## File Location
-- [`MarioGame/service.yaml`](../MarioGame/service.yaml)
-
-## Example
-```yaml
-apiVersion: v1
-kind: Service
-metadata:
-  name: mario-game-service
-spec:
-  selector:
-    app: mario-game
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
-  type: LoadBalancer
+    <h2>Usage</h2>
+    <pre>
+        terraform init
+        terraform plan
+        terraform apply
+    </pre>
+</body>
+</html>
